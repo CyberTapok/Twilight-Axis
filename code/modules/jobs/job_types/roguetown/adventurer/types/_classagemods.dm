@@ -82,6 +82,72 @@
 	minor_mod = 1
 	utility_mod = 3
 
+/* // --- VETERAN ---
+/datum/class_age_mod/veteran
+	target_age = AGE_OLD	//Saving ourselves the redundancy
+
+/datum/class_age_mod/veteran/battlemaster
+	skill_mods = list(
+		/datum/skill/combat/swords = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/combat/maces = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_MASTER,
+	)
+	stat_mods = list(
+		STATKEY_WIL = 1
+	)
+
+/datum/class_age_mod/veteran/footman
+	skill_mods = list(
+		/datum/skill/combat/shields = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/combat/polearms = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/combat/swords = SKILL_LEVEL_MASTER,
+		/datum/skill/combat/maces = SKILL_LEVEL_MASTER,
+		/datum/skill/combat/axes = SKILL_LEVEL_MASTER,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_MASTER
+	)
+
+/datum/class_age_mod/veteran/cavalryman
+	// You get a lot of weapon skills, but none are legendary. Jack of all trades, master of none.
+	// This is probably worse than just having legendary in one, as people rarely swap weapons mid-combat.
+	skill_mods = list(
+		/datum/skill/combat/swords = SKILL_LEVEL_MASTER,
+		/datum/skill/combat/bows = SKILL_LEVEL_MASTER,
+		/datum/skill/combat/crossbows = SKILL_LEVEL_MASTER,
+		/datum/skill/combat/maces = SKILL_LEVEL_MASTER,
+		/datum/skill/combat/axes = SKILL_LEVEL_MASTER,
+		/datum/skill/combat/whipsflails = SKILL_LEVEL_MASTER,
+		/datum/skill/combat/polearms = SKILL_LEVEL_MASTER,
+	)
+
+/datum/class_age_mod/veteran/mercenary
+	skill_mods = list(
+		/datum/skill/combat/axes = SKILL_LEVEL_MASTER,
+		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN
+	)
+
+/datum/class_age_mod/veteran/scout
+	skill_mods = list(
+		/datum/skill/combat/bows = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/combat/axes = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/misc/tracking = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/combat/swords = SKILL_LEVEL_MASTER,
+	)
+
+/datum/class_age_mod/veteran/spy
+	// Having Master Knives is extremely negligible for a singular role that isn't even meant to be combative.
+	skill_mods = list(
+		/datum/skill/misc/sneaking = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/combat/whipsflails = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/combat/knives = SKILL_LEVEL_MASTER,
+		/datum/skill/combat/bows = SKILL_LEVEL_MASTER,
+		/datum/skill/misc/climbing = SKILL_LEVEL_MASTER,
+		/datum/skill/misc/stealing = SKILL_LEVEL_MASTER,
+		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT
+	)
+	stat_mods = list(
+		STATKEY_SPD = 1	// You get -2 speed from being old. You are still in the negative stat wise from picking old.
+	) */
+
 //--- THE REST ---
 
 /datum/class_age_mod/grand_duke
