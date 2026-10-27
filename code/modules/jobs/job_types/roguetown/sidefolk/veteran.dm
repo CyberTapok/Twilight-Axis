@@ -22,8 +22,8 @@
 	cmode_music = sound("sound/music/combat_veteran.ogg")
 	job_subclasses = list(
 		/datum/advclass/veteran/battlemaster,
-		/datum/advclass/veteran/fechtmaster,
-		/datum/advclass/veteran/knight,
+		/datum/advclass/veteran/footman,
+		/datum/advclass/veteran/calvaryman,
 		/datum/advclass/veteran/merc,
 		/datum/advclass/veteran/scout,
 		/datum/advclass/veteran/spy
@@ -148,10 +148,10 @@
 				H.adjust_skillrank_up_to(/datum/skill/craft/crafting, SKILL_LEVEL_APPRENTICE, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/craft/tanning, SKILL_LEVEL_APPRENTICE, TRUE)
 
-/datum/advclass/veteran/fechtmaster
+/datum/advclass/veteran/footman
 	name = "Fechtmaster"
 	tutorial = "You have gained fame on the continent as a legendary swordsman. You are not a warrior in the conventional sense. You have not really participated in real battles, instead immersing yourself in competitions and duels. For you, wielding a weapon is a science to which you have devoted your long life. The local monarch has invited you to share your skill and wisdom with both his warriors and his courtiers. You specialize in swords and spears."
-	outfit = /datum/outfit/job/roguetown/vet/fechtmaster
+	outfit = /datum/outfit/job/roguetown/vet/footman
 
 	category_tags = list(CTAG_VETERAN)
 	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_STEELHEARTED)
@@ -181,7 +181,7 @@
 		/datum/skill/misc/medicine = SKILL_LEVEL_APPRENTICE,
 	)
 
-/datum/outfit/job/roguetown/vet/fechtmaster/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/vet/footman/pre_equip(mob/living/carbon/human/H)
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
@@ -239,10 +239,10 @@
 				H.adjust_skillrank_up_to(/datum/skill/craft/crafting, SKILL_LEVEL_APPRENTICE, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/craft/tanning, SKILL_LEVEL_APPRENTICE, TRUE)
 
-/datum/advclass/veteran/knight
+/datum/advclass/veteran/calvaryman
 	name = "Tarnished Knight"
 	tutorial = "Once, you were part of the retinue of the local ruler, perhaps even serving his predecessor. But time spares no one, and so you were granted an honorable retirement, removed from regular service. Your influence at court has noticeably diminished, but it has not disappeared. You are still entrusted with the upbringing of the younger generation in the form of squires. Most likely, it will be your decision that will determine whether they receive a knighthood."
-	outfit = /datum/outfit/job/roguetown/vet/knight
+	outfit = /datum/outfit/job/roguetown/vet/calvaryman
 
 	category_tags = list(CTAG_VETERAN)
 	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_MEDIUMARMOR, TRAIT_STEELHEARTED, TRAIT_GOODTRAINER, TRAIT_NOBLE)
@@ -272,7 +272,7 @@
 		/datum/skill/misc/medicine = SKILL_LEVEL_JOURNEYMAN,
 	)
 
-/datum/outfit/job/roguetown/vet/knight/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/vet/calvaryman/pre_equip(mob/living/carbon/human/H)
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/full/iron
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
