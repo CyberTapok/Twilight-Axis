@@ -509,7 +509,7 @@
 	switch(weapon_choice)
 		if("Long Bow")
 			beltl = /obj/item/quiver/arrows
-			beltr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow
+			r_hand = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow
 		if("Slurbow")
 			beltr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/slurbow
 			beltl = /obj/item/quiver/bolt/light
@@ -531,7 +531,7 @@
 		SStreasury.give_money_account(ECONOMIC_RICH, H, "Retirement.")
 	H.adjust_blindness(-3)
 	if(H.mind)
-		var/retirement = list("Dabble Smithing", "Write an autobiography")
+		var/retirement = list("Dabble in Smithing", "Write an autobiography")
 		var/retirement_choice = input(H, "During your retirement, you decided to...", "PICK A HOBBY.") as anything in retirement
 		switch(retirement_choice)
 			if("Dabble in Smithing")
